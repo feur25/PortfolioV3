@@ -476,7 +476,7 @@ button{
     width: 50vw;
   }
   .sub-project{
-    width : 150vw;
+    width : 0;
     flex-direction: column;
     margin: -10vh 20vw;
   }
