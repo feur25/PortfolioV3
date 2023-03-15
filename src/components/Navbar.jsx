@@ -274,105 +274,105 @@ function DisplayBlog() {
   );
 };
 export const NavbarBlog = ({ children }) => {
-  const activeDot = useRef(null);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [currentPage, setCurrentPage] = useState(null);
-  const [navBarVisible, setNavBarVisible] = useState(false);
+  // const activeDot = useRef(null);
+  // const [isScrolling, setIsScrolling] = useState(false);
+  // const [currentPage, setCurrentPage] = useState(null);
+  // const [navBarVisible, setNavBarVisible] = useState(false);
 
-  const handelDotMovement = (e) => {
-    setIsScrolling(true);
-    if (e.scroll !== false) {
-      document.getElementById(`${e.target.id}-page`).scrollIntoView();
-    }
-    const state = Flip.getState(activeDot.current);
-    e.target.appendChild(activeDot.current);
-    document.querySelectorAll(".navbar-item").forEach((el) => {
-      el.classList.remove("active");
-    });
-    e.target.classList.add("active");
-    Flip.from(state, {
-      duration: 0.5,
-      absolute: true,
-      ease: "elastic.out(1,0.8)",
-    });
-    setIsScrolling(false);
-  };
+  // const handelDotMovement = (e) => {
+  //   setIsScrolling(true);
+  //   if (e.scroll !== false) {
+  //     document.getElementById(`${e.target.id}-page`).scrollIntoView();
+  //   }
+  //   const state = Flip.getState(activeDot.current);
+  //   e.target.appendChild(activeDot.current);
+  //   document.querySelectorAll(".navbar-item").forEach((el) => {
+  //     el.classList.remove("active");
+  //   });
+  //   e.target.classList.add("active");
+  //   Flip.from(state, {
+  //     duration: 0.5,
+  //     absolute: true,
+  //     ease: "elastic.out(1,0.8)",
+  //   });
+  //   setIsScrolling(false);
+  // };
 
-  useEffect(() => {
-    if (currentPage && isScrolling === false) {
-      handelDotMovement({
-        target: document.getElementById(currentPage),
-        // target: document.getElementById("home"),
-        scroll: false,
-      });
-    }
-  }, [currentPage]);
+  // useEffect(() => {
+  //   if (currentPage && isScrolling === false) {
+  //     handelDotMovement({
+  //       target: document.getElementById(currentPage),
+  //       // target: document.getElementById("home"),
+  //       scroll: false,
+  //     });
+  //   }
+  // }, [currentPage]);
 
-  useEffect(() => {
-    gsap.registerPlugin(Flip);
-  }, []);
+  // useEffect(() => {
+  //   gsap.registerPlugin(Flip);
+  // }, []);
 
-  return (
-    <>
-      <MenuButton
-        className={navBarVisible ? "" : "active"}
-        onClick={() => setNavBarVisible(true)}
-      >
-        <AiOutlineMenu size="30" />
-      </MenuButton>
-      <StyledBlogNavbar className={navBarVisible ? "active" : ""}>
-        <CloseButton onClick={() => setNavBarVisible(false)}>
-          <AiOutlineClose size={30} />
-        </CloseButton>
-        <nav class="btn-pluss-wrapper">
-        <h2 class="tooltip">Look!</h2>
-        <div href="#" class="btn-pluss">
-        <ul>
-          <li>
-            <NavbarItem
-              className="navbar-item"
-              onClick={handelDotMovement}
-              id="blog"
-            >
-              Blog
-            </NavbarItem>
-          </li>
-          <li className="home_navbar-item">
-          <a href="">
-            <NavbarItem
-              className="navbar-item"
-              onClick={handelDotMovement}
-              id="home"
-            >
-              Home
-              <div className="dot" ref={activeDot} />
-            </NavbarItem>
-            </a>
-          </li>
-          <li>
-          <div >
-            <NavbarItem>
-              <i id="facebook"><img src={IMG1}></img></i>
-            </NavbarItem>
-          </div>
-          </li>
-          <li>
-            <NavbarItem
-              className="navbar-item"
-              onClick={handelDotMovement}
-              id="contact"
-            >
-              Contact
-            </NavbarItem>
-          </li>
-        </ul>
-        </div>
-        </nav>
+  // return (
+  //   <>
+  //     <MenuButton
+  //       className={navBarVisible ? "" : "active"}
+  //       onClick={() => setNavBarVisible(true)}
+  //     >
+  //       <AiOutlineMenu size="30" />
+  //     </MenuButton>
+  //     <StyledBlogNavbar className={navBarVisible ? "active" : ""}>
+  //       <CloseButton onClick={() => setNavBarVisible(false)}>
+  //         <AiOutlineClose size={30} />
+  //       </CloseButton>
+  //       <nav class="btn-pluss-wrapper">
+  //       <h2 class="tooltip">Look!</h2>
+  //       <div href="#" class="btn-pluss">
+  //       <ul>
+  //         <li>
+  //           <NavbarItem
+  //             className="navbar-item"
+  //             onClick={handelDotMovement}
+  //             id="blog"
+  //           >
+  //             Blog
+  //           </NavbarItem>
+  //         </li>
+  //         <li className="home_navbar-item">
+  //         <a href="">
+  //           <NavbarItem
+  //             className="navbar-item"
+  //             onClick={handelDotMovement}
+  //             id="home"
+  //           >
+  //             Home
+  //             <div className="dot" ref={activeDot} />
+  //           </NavbarItem>
+  //           </a>
+  //         </li>
+  //         <li>
+  //         <div >
+  //           <NavbarItem>
+  //             <i id="facebook"><img src={IMG1}></img></i>
+  //           </NavbarItem>
+  //         </div>
+  //         </li>
+  //         <li>
+  //           <NavbarItem
+  //             className="navbar-item"
+  //             onClick={handelDotMovement}
+  //             id="contact"
+  //           >
+  //             Contact
+  //           </NavbarItem>
+  //         </li>
+  //       </ul>
+  //       </div>
+  //       </nav>
       
-      </StyledBlogNavbar>
-      <NavbarContext.Provider value={setCurrentPage}>
-        {children}
-      </NavbarContext.Provider>
-    </>
-  );
+  //     </StyledBlogNavbar>
+  //     <NavbarContext.Provider value={setCurrentPage}>
+  //       {children}
+  //     </NavbarContext.Provider>
+  //   </>
+  // );
 };

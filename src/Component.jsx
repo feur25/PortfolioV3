@@ -19,6 +19,7 @@ function HomeSpawn() {
       let someSpecificWord  = 'il-feur25/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
+      console.log(getId)
         if(getId === ""){
           return (
               <div className="App">
@@ -60,6 +61,7 @@ function HomeSpawn() {
     return(
         <> 
         <Navbar> 
+          <p>Hello</p>
           <Blog />
         </Navbar>
           {/* <SideBar /> 
