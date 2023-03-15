@@ -5,7 +5,7 @@ import { Page } from "../../../components/Page";
 
 const GetIdProject = ({ data }) => {
   let route = window.location.href;
-  let someSpecificWord  = 'il-feur25/';
+  let someSpecificWord  = 'coletta-portfolio/';
   let splitstr = route.split(someSpecificWord);
   let getId  = splitstr[1];
   let findId = parseInt(getId);
