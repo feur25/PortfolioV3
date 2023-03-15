@@ -18,7 +18,7 @@ const Blogs = ({ data }) => {
 
                           <div className="portfolio__item-cta">
                             <div>
-                              <a href={item.blogId} className="btn">
+                              <a href={"https://portfolio-v3-bay-seven/" + item.blogId + ".vercel.app"} className="btn">
                                 <p className="white">{item.title}</p>
                               </a>
                             </div>
