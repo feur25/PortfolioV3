@@ -16,10 +16,10 @@ function HomeSpawn() {
       useEffect(()=>{
           setUrl(window.location.href)
       }, [])
-      let someSpecificWord  = 'il-feur25/';
+      let someSpecificWord  = '-feur25/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
-      console.log(getId)
+      console.log(getId);
         if(getId === ""){
           return (
               <div className="App">
