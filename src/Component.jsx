@@ -16,7 +16,7 @@ function HomeSpawn() {
       useEffect(()=>{
           setUrl(window.location.href)
       }, [])
-      let someSpecificWord  = 'vercel.app/';
+      let someSpecificWord  = 'seven/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
       console.log(getId);

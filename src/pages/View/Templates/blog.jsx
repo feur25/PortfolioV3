@@ -5,7 +5,7 @@ import { Page } from "../../../components/Page";
 
 const GetIdProject = ({ data }) => {
   let route = window.location.href;
-  let someSpecificWord  = 'vercel.app/';
+  let someSpecificWord  = 'seven/';
   let splitstr = route.split(someSpecificWord);
   let getId  = splitstr[1];
   let findId = parseInt(getId);
