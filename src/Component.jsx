@@ -16,11 +16,11 @@ function HomeSpawn() {
       useEffect(()=>{
           setUrl(window.location.href)
       }, [])
-      let someSpecificWord  = 'coletta-portfolio/';
+      let someSpecificWord  = 'vercel.app/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
       console.log(getId);
-        // if(getId === "" || getId === undefined){
+        if(getId === "" || getId === undefined){
           return (
               <div className="App">
                 <Navbar> 
@@ -57,17 +57,17 @@ function HomeSpawn() {
                 </Navbar>
               </div>
         );
-      // }
-    // return(
-    //     <> 
-    //     <Navbar> 
-    //       <p>Hello</p>
-    //       <Blog />
-    //     </Navbar>
-    //       {/* <SideBar /> 
-    //       <Blog />
-    //       <Contact />  */}
-    //     </> 
-    // )
+      }
+    return(
+        <> 
+        <Navbar> 
+          <p>Hello</p>
+          <Blog />
+        </Navbar>
+          {/* <SideBar /> 
+          <Blog />
+          <Contact />  */}
+        </> 
+    )
 }
 export default HomeSpawn;
