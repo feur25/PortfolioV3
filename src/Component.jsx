@@ -17,7 +17,7 @@ function HomeSpawn() {
       useEffect(()=>{
           setUrl(window.location.href)
       }, [])
-      let someSpecificWord  = '5173/';
+      let someSpecificWord  = 'seven/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
       console.log("le getId : " + getId);
