@@ -14,7 +14,7 @@ const lngs = {
 const GetIdProject = ({ data }) => {
   const { t } = useTranslation();
   let route = window.location.href;
-  let someSpecificWord  = 'seven/';
+  let someSpecificWord  = 'vercel.app/';
   let splitstr = route.split(someSpecificWord);
   let getId  = splitstr[1];
   let findId = parseInt(getId);
