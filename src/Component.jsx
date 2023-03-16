@@ -1,4 +1,4 @@
-import React , {  useState, useEffect } from "react";
+import React , {  useState, useEffect  } from "react";
 import { Navbar, NavbarBlog } from "./components/Navbar";
 // import SideBar from "./components/SideBar";
 import { About } from "./pages/View/About";
@@ -11,22 +11,29 @@ import Blog from './_id';
 import NotFound from "./pages/View/Templates/NotFound";
 // import GetUrl from "./pages/Models/GetURLId";
 // import {CardJob} from "./pages/View/Templates/tools";
+import MyContext from './variable';
 
 function HomeSpawn() {
-      const [url, setUrl] = useState("None");
-      useEffect(()=>{
-          setUrl(window.location.href)
-      }, [])
-      let someSpecificWord  = 'vercel.app/';
-      let splitstr = url.split(someSpecificWord);
-      const getId  = splitstr[1];
-      console.log("le getId : " + getId);
-        if(getId === "" || getId === undefined){
+      // const [url, setUrl] = useState("None");
+      // useEffect(()=>{
+      //     setUrl(window.location.href)
+      // }, [])
+      // let someSpecificWord  = 'vercel.app/';
+      // let splitstr = url.split(someSpecificWord);
+      // const getId  = splitstr[1];
+      const [myVariable, setMyVariable ] = useState("none");
+      // console.log(myVariable);
+      // function handleClick() {
+      //   setMyVariable('none');
+      //   console.log("ma variable : " + myVariable);
+      // }
+      console.log("ma variable : " + myVariable);
+        if(myVariable ===  "none"){
           return (
               <div className="App">
                 <Navbar>
                   {/* <GetUrl /> */}
-                  <div className="myDivHome">
+                  <div className="myDivHome" >
                     <Home />
                   </div>
                   {/* <Projects /> */}
@@ -59,19 +66,16 @@ function HomeSpawn() {
               </div>
         );
       }
-      if(getId === "error"){
+      if(myVariable === "error"){
           return(
               <NotFound />
           )
       }
-    return(
+      return(
         <> 
         <Navbar> 
           <Blog />
         </Navbar>
-          {/* <SideBar /> 
-          <Blog />
-          <Contact />  */}
         </> 
     )
 }

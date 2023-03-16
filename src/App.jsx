@@ -4,7 +4,7 @@ import HomeSpawn from './Component';
 class App extends Component {
   
   render(){
-    console.log(HomeSpawn)
+    console.log("plop");
     return(
       <div> 
         <HomeSpawn />

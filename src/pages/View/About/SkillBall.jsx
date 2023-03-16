@@ -36,6 +36,7 @@ const Skills = () => {
     "CSS",
     "JavaScript",
     "ThreeJs",
+    "Github / Perforce",
   ];
   const g = useRef();
   useFrame(() => {
