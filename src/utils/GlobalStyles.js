@@ -631,6 +631,9 @@ button{
     bottom : 0;
   }
 }
+.black{
+  background-color : none;
+}
 // .text {      
 //   font-weight: 700;
 //   font-size: 5rem;

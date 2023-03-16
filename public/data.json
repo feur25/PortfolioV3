@@ -41,7 +41,7 @@
     "id": 4,
     "title": "fithTitleBlog",
     "content": "fithBlog",
-    "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
+    "imageUrl" : "https://i.ibb.co/NTG9Jrb/linux.png",
     "date" : "14/03/2023"
   },
   {
@@ -50,7 +50,7 @@
     "id": 5,
     "title": "sixthTitleBlog",
     "content": "sixthBlog",
-    "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
+    "imageUrl" : "https://i.ibb.co/0tJSr37/jv.png",
     "date" : "14/03/2023"
   },
   {
@@ -59,7 +59,7 @@
     "id": 6,
     "title": "seventhTitleBlog",
     "content": "seventhBlog",
-    "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
+    "imageUrl" : "https://i.ibb.co/jv5jy88/IDE.png",
     "date" : "14/03/2023"
   }
 ]

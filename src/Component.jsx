@@ -20,7 +20,7 @@ function HomeSpawn() {
       let someSpecificWord  = '5173/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
-      console.log(getId);
+      console.log("le getId : " + getId);
         if(getId === "" || getId === undefined){
           return (
               <div className="App">
@@ -67,7 +67,6 @@ function HomeSpawn() {
     return(
         <> 
         <Navbar> 
-          <p>Hello</p>
           <Blog />
         </Navbar>
           {/* <SideBar /> 

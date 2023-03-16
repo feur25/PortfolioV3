@@ -257,7 +257,7 @@ class Card extends React.Component {
         <ProfileStyles>
           <div style={bodyStyles} className="body">
             <div className="flex">
-              <Card type="Quentin" imgSrc="https://media.giphy.com/media/Y6pDMTysYTQ2I/giphy.gif" avatarSrc="https://i.pinimg.com/originals/74/4d/b3/744db3fd9842133829be6e0182c3d62d.jpg" />
+              <Card type="Quentin" imgSrc="https://media.giphy.com/media/Y6pDMTysYTQ2I/giphy.gif" avatarSrc="https://i.ibb.co/sbr0HYh/IMG-2553.jpg" />
             </div>
           </div>
       </ProfileStyles>
