@@ -11,9 +11,18 @@ import IMG6 from "../../../assets/images/portfolio6.jpg";
 import IMG7 from "../../../assets/images/portfolio6.jpg";
 import IMG8 from "../../../assets/images/portfolio6.jpg";
 import { Page } from "../../../components/Page";
+import { useTranslation } from 'react-i18next';
 
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
 export const Services = () => {
+  const { t } = useTranslation();
   return (
+    
     <Page header="Services">
       <section id="services">
 
@@ -21,29 +30,29 @@ export const Services = () => {
           {/*  UI/UX */}
           <article className="service">
             <div className="services__head">
-              <h3>Développement Web : E-commerce / Vitrine</h3>
+              <h3>{t("firstService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Maquette du site web</p>
+                <p>{t("FfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Développement aux choix, sur les framework Angular, React, Laravel ...</p>
+                <p>{t("FsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Mise en place du server en Ligne</p>
+                <p>{t("FthirdSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Mise en place de BDD (si demmandés)</p>
+                <p>{t("FfourthSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Admin Dashboard / vision Global du site / Ajout de nouveau produit</p>
+                <p>{t("FfithSlot")}</p>
               </li>
             </ul>
           </article>
@@ -51,25 +60,25 @@ export const Services = () => {
           {/* Web Development*/}
           <article className="service">
             <div className="services__head">
-              <h3>Java Plugin / Mods Minecraft</h3>
+              <h3>{t("secondService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Création de Plugin sur demande détaillé</p>
+                <p>{t("SfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Création de Mod, si Modèle 3D fournis au préalable</p>
+                <p>{t("SsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Création de DataPack</p>
+                <p>{t("SthirdSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Mise en place du server</p>
+                <p>{t("SfourthSlot")}</p>
               </li>
             </ul>
           </article>
@@ -77,109 +86,101 @@ export const Services = () => {
           {/* Content Creation*/}
           <article className="service">
             <div className="services__head">
-              <h3>Cours Apprentisage aux Jeux Vidéos</h3>
+              <h3>{t("thirdService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Cours Unity : C#</p>
+                <p>{t("TfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Cours Unreal Engine : C++ / .h / Blueprint</p>
+                <p>{t("TsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Apprentisage de comment faire : UI / Widget</p>
+                <p>{t("TthirdSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Optimisation du Jeu</p>
+                <p>{t("TfourthSlot")}</p>
               </li>
             </ul>
           </article>
           <article className="service">
             <div className="services__head">
-              <h3>Content Creation</h3>
+              <h3>{t("fourthService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FOfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FOsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FOthirdSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FOfourthSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FOfithSlot")}</p>
               </li>
             </ul>
           </article>
           <article className="service">
             <div className="services__head">
-              <h3>Content Creation</h3>
+              <h3>{t("fithService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FIfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FIsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("FIthirdSlot")}</p>
               </li>
             </ul>
           </article>
           <article className="service">
             <div className="services__head">
-              <h3>Content Creation</h3>
+              <h3>{t("sixthService")}</h3>
             </div>
 
             <ul className="services__list">
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("SIfirstSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("SIsecondSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("SIthirdSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("SIfourthSlot")}</p>
               </li>
               <li>
                 <BiCheck className="service__list-icon" />
-                <p>Lorem, ipsum dolor sit amet consectetur elit.</p>
+                <p>{t("SIfithSlot")}</p>
               </li>
             </ul>
           </article>
@@ -194,7 +195,6 @@ export const Services = () => {
       </Page>
   );
 };
-
 export const Portfolio = () => {
   return (
     <Page header="Projects">
@@ -206,7 +206,7 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG1}/></div></a>
             </div>
             <div className="TwoProjet">
-                <a href="">
+                <a href="error">
                 <p>Unreal Engine</p>
                 <div className="image"><img src={IMG2}/></div></a>
             </div>
@@ -221,20 +221,15 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG4}/></div></a>
             </div>
             <div className="FiveProjet">
-                <a href="">
+                <a href="error">
                 <p>IA Web</p>
                 <div className="image"><img src={IMG5}/></div></a>
             </div>
             <div className="SixProjet">
-                <a href="">
+                <a href="error">
                 <p>BDD</p>
                 <div className="image"><img src={IMG6}/></div></a>
             </div>
-            <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
             {/* <div className="SevenProjet">
                 <a href="">
                 <p>Helysio</p>

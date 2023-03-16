@@ -621,11 +621,60 @@ button{
   height : 5vh;
 }
 .containerV2{
-  margin : 15vh auto;
+  margin : 2vh auto;
 }
 @media screen and (max-width : 1350px){
   .containerV2{
     display : none;
+  }
+  ..buttonTranslate button{
+    bottom : 0;
+  }
+}
+// .text {      
+//   font-weight: 700;
+//   font-size: 5rem;
+//   color: #fff;
+//   border: 3px solid #fff;
+//   padding: 1rem 2rem;
+// }
+.buttonTranslate button{
+  font-size: 1.333rem;
+  color: #fff4;
+  display : flex;
+  justify-content : colunm;
+  &:hover{
+    cursor : pointer;
+    color : white;
+  }
+}
+.gradient {
+
+  /* Colors generated on: https://colorhunt.co/palette/179481 */
+  background: linear-gradient(45deg, #9B4DCA, #4A0E35, #222730, #222730);
+  background-size: 300% 300%;
+  animation: colors 10s ease infinite;
+}
+.cardBackImg{
+  background-color : black;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 `;

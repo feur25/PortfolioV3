@@ -3,8 +3,8 @@
     "blogId": 0,
     "class" : "One",
     "id": 0,
-    "title": "Les Bases de L'IA",
-    "content": "Voici Mon premier Blog",
+    "title": "firsTitlelog",
+    "content": "firstBlog",
     "imageUrl" : "https://i.ibb.co/nMmHqsD/th-1.jpg",
     "date" : "10 octobre 2021"
   },
@@ -12,8 +12,8 @@
     "blogId": 1,
     "class" : "Two",
     "id": 1,
-    "title": "Les Bases de Golang",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "secondTitleBlog",
+    "content": "secondBlog",
     "imageUrl" : "https://i.ibb.co/pw86FpS/Gos-Performance.png",
     "date" : "14/03/2023"
   },
@@ -21,8 +21,8 @@
     "blogId": 2,
     "class" : "Three",
     "id": 2,
-    "title": "Apprendre le Python",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "thirdTitleBlog",
+    "content": "thirdBlog",
     "imageUrl" : "https://i.ibb.co/wh08ycj/th.jpg",
     "date" : "14/03/2023"
   },
@@ -30,8 +30,8 @@
     "blogId": 3,
     "class" : "Four",
     "id": 3,
-    "title": "Apprendre le Web",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "fourthTitleBlog",
+    "content": "fourthBlog",
     "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
     "date" : "14/03/2023"
   },
@@ -39,8 +39,8 @@
     "blogId": 4,
     "class" : "Five",
     "id": 4,
-    "title": "Apprendre le Web",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "fithTitleBlog",
+    "content": "fithBlog",
     "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
     "date" : "14/03/2023"
   },
@@ -48,8 +48,8 @@
     "blogId": 5,
     "class" : "Six",
     "id": 5,
-    "title": "Apprendre le Web",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "sixthTitleBlog",
+    "content": "sixthBlog",
     "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
     "date" : "14/03/2023"
   },
@@ -57,8 +57,8 @@
     "blogId": 6,
     "class" : "Seven",
     "id": 6,
-    "title": "Apprendre le Web",
-    "content": "Mais aussi d'autres comme par exemple la réalisation d'une api d'hypixel (le server minecraft le plus connue), réaliser en golang, car oui golang peut instancier des pages web, qui est entre autres l'une de ces premières qualités qui le met en avant . Et enfin j'ai réalisé au cours de mon apprentissage sur le go Lang, un forum aider par un collègue, le design laissant à désirer je l'accorde, permettant de communiquer, avec entre utilisateurs, les messages chiffrer création du topic et publication, avec réponse, ajouts d'amis, tous un côté infrastructure a été mise en place dans ce projet :",
+    "title": "seventhTitleBlog",
+    "content": "seventhBlog",
     "imageUrl" : "https://i.ibb.co/3SQ8mY5/th-2.jpg",
     "date" : "14/03/2023"
   }

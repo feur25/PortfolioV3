@@ -8,6 +8,7 @@ import { Home } from "./pages/View/home";
 import {Services, Portfolio}  from "./pages/View/Projects/ProjectItem";
 import MyApp from './_app';
 import Blog from './_id';
+import NotFound from "./pages/View/Templates/NotFound";
 // import GetUrl from "./pages/Models/GetURLId";
 // import {CardJob} from "./pages/View/Templates/tools";
 
@@ -16,14 +17,14 @@ function HomeSpawn() {
       useEffect(()=>{
           setUrl(window.location.href)
       }, [])
-      let someSpecificWord  = 'seven/';
+      let someSpecificWord  = '5173/';
       let splitstr = url.split(someSpecificWord);
       const getId  = splitstr[1];
       console.log(getId);
         if(getId === "" || getId === undefined){
           return (
               <div className="App">
-                <Navbar> 
+                <Navbar>
                   {/* <GetUrl /> */}
                   <div className="myDivHome">
                     <Home />
@@ -57,6 +58,11 @@ function HomeSpawn() {
                 </Navbar>
               </div>
         );
+      }
+      if(getId === "error"){
+          return(
+              <NotFound />
+          )
       }
     return(
         <> 

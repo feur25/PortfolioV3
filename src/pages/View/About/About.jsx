@@ -12,6 +12,14 @@ import highschool from "../../../assets/images/highschool.jpeg";
 import sos from "../../../assets/images/sos.png";
 import UserCard from './Profile';
 // import "../../Controller/AboutController";
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
 
 export const About = () => {
       useEffect( () => {
@@ -38,6 +46,9 @@ export const About = () => {
           });
         });
       }, []);
+      const {t} = useTranslation();
+      let InCompleted = t("toComplete");
+      let InProgress = t("toWait");
   return (
     <Page header="About">
       <Text>
@@ -49,7 +60,7 @@ export const About = () => {
             active
             data={{
               title: "Helysio",
-              p: "Server Minecraft Abandonnée",
+              p: t("helysio"),
               image: helysio,
             }}
           />
@@ -57,40 +68,35 @@ export const About = () => {
             color={green}
             data={{
               title: "Engineer",
-              p: "Jeu vidéo ou vous incarnerais un Robot, fait sur UE5",
+              p: t("engineer"),
               image: highschool,
             }}
           />
           <AboutItem
             color={yellow}
             data={{
-              title: "En cours ",
-              p: "A completer",
+              title: InProgress,
+              p: InCompleted,
               image: sos,
             }}
           />
           <AboutItem
             color={blue}
             data={{
-              title: "En cours ",
-              p: "A completer",
+              title: InProgress,
+              p: InCompleted,
               image: sos,
             }}
           />
           <AboutItem
             color={white}
             data={{
-              title: "En cours ",
-              p: "A completer",
+              title: InProgress,
+              p: InCompleted,
               image: sos,
             }}
           />
         </Educations>
-        <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
         </Paragraph>
       </Text>
       <SkillsWrapper>

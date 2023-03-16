@@ -2,10 +2,19 @@ import React from 'react';
 import NotFound from './NotFound';
 import { ProjectImage } from "./GobalStyles";
 import { Page } from "../../../components/Page";
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
 
 const GetIdProject = ({ data }) => {
+  const { t } = useTranslation();
   let route = window.location.href;
-  let someSpecificWord  = 'seven/';
+  let someSpecificWord  = '5173/';
   let splitstr = route.split(someSpecificWord);
   let getId  = splitstr[1];
   let findId = parseInt(getId);
@@ -18,8 +27,8 @@ const GetIdProject = ({ data }) => {
         (found === index ? 
           <ProjectImage>
             <img key={index} class="blogImages" src={item.imageUrl} alt={item.title}/>
-            <h1>{item.title}</h1>
-            <p>{item.content}</p>
+            <h1>{t(item.title)}</h1>
+            <p>{t(item.content)}</p>
           </ProjectImage>
           :<></> )
         )}

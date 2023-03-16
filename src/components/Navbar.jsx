@@ -8,12 +8,24 @@ import { StyledNavbar, StyledBlogNavbar } from "./style/NavbarStyles";
 import { NavbarItem, Penguin } from "./ui";
 import IMG1 from "../assets/images/git.png";
 import IMG2 from "../assets/images/link.png";
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
+
 
 export const Navbar = ({ children }) => {
   const activeDot = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
   const [currentPage, setCurrentPage] = useState(null);
   const [navBarVisible, setNavBarVisible] = useState(false);
+
+  const { t, i18n } = useTranslation();
+
 
   const handelDotMovement = (e) => {
     setIsScrolling(true);
@@ -193,7 +205,7 @@ function DisplayBlog() {
                 onClick={handelDotMovement}
                 id="projects"
               >
-                Projects
+                {t('project')}
               </NavbarItem>
             </li>
           </button>
@@ -204,7 +216,7 @@ function DisplayBlog() {
                 onClick={handelDotMovement}
                 id="services"
               >
-                Services
+                {t('service')}
               </NavbarItem>
             </li>
           </button>
@@ -215,7 +227,7 @@ function DisplayBlog() {
                 onClick={handelDotMovement}
                 id="blog"
               >
-                Blogs
+                {t('blog')}
               </NavbarItem>
             </li>
           </button>
@@ -238,7 +250,7 @@ function DisplayBlog() {
                 onClick={handelDotMovement}
                 id="about"
               >
-                About
+                {t('about')}
               </NavbarItem>
             </li>
           </button>
@@ -249,10 +261,19 @@ function DisplayBlog() {
                 onClick={handelDotMovement}
                 id="contact"
               >
-                Contact
+                {t('contact')}
               </NavbarItem>
             </li>
           </button>
+          <br/>
+          <li>
+            <div className="buttonTranslate">
+              {Object.keys(lngs).map((lng)=>(
+                    <button type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}>{lngs[lng].nativeName}</button>
+                  )
+                  )}
+              </div>
+          </li>
           <li>
             <div className="containerV2">
               <NavbarItem>

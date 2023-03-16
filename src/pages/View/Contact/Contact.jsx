@@ -12,9 +12,19 @@ import IMG3 from "../../../assets/images/gmail.png";
 import { faHome, faLink, faPerson, faBlog  } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { Icons } from '../../components/utility/Icons';
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
 
 export const Contact = () => {
   const [form, setFormState] = useState({ name: "", email: "", message: "" });
+  const { t } = useTranslation();
+
   // const buttonSize = 80;
   // const senderMail = <FontAwesomeIcon icon={faMailBulk} />;
   return (
@@ -57,7 +67,7 @@ export const Contact = () => {
           id="contactform"
         >
           <Input
-            placeholder="Nom"
+            placeholder={t("name")}
             type="text"
             name="name"
             onChange={(e) => {
@@ -66,7 +76,7 @@ export const Contact = () => {
             value={form.name}
           />
           <Input
-            placeholder="Email"
+            placeholder={t("email")}
             type="email"
             name="email"
             onChange={(e) => {
@@ -76,7 +86,7 @@ export const Contact = () => {
           />
           <Textarea
             lines={15}
-            placeholder="Si tu souhaite me contacter"
+            placeholder={t("contactMe")}
             name="message"
             onChange={(e) => {
               setFormState((prev) => ({ ...prev, message: e.target.value }));
@@ -122,14 +132,8 @@ export const Contact = () => {
               document.forms["contact"].submit();
             }}
           >
-            Submit
+            {t("submit")}
           </Button>
-  
-          <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
           {/* </div> */}
         </ContactForm>
       </ContactWrapper>

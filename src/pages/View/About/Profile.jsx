@@ -204,7 +204,6 @@ class CardSocialIcons extends React.Component {
 //     )
 //   }
 // }
-
 class Card extends React.Component {
   //  constructor(props){
   //    super(props);
@@ -224,6 +223,7 @@ class Card extends React.Component {
        })
      }
    }
+   
    render(){
      
      return (
@@ -252,6 +252,7 @@ class Card extends React.Component {
      super(props);
    }
    render(){
+    // 
      return (
         <ProfileStyles>
           <div style={bodyStyles} className="body">

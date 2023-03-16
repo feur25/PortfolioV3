@@ -1,7 +1,16 @@
 import React from 'react';
 import { BlogImage } from "./BlogStyles";
 import "./portfolio.css";
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+  en : { nativeName: "English"},
+  fr : {
+    nativeName : "French"
+  }
+};
 const Blogs = ({ data }) => {
+  const { t } = useTranslation();
   return (
       <div>
         <ul>
@@ -18,8 +27,8 @@ const Blogs = ({ data }) => {
 
                           <div className="portfolio__item-cta">
                             <div>
-                              <a href={"https://portfolio-v3-bay-seven/" + item.blogId + ".vercel.app"} className="btn">
-                                <p className="white">{item.title}</p>
+                              <a href={item.blogId} className="btn">
+                                <p className="white">{t(item.title)}</p>
                               </a>
                             </div>
                           </div>
@@ -36,11 +45,6 @@ const Blogs = ({ data }) => {
             </div>
           </BlogImage>
         </ul>
-        <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
       </div>
   );
 };

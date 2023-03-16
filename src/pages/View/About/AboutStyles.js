@@ -57,6 +57,7 @@ export const Educations = styled.section`
 export const Text = styled.aside`
   grid-column: 2/7;
   width: 100%;
+  margin : 8vh auto;
   @media screen and (max-width: 720px) {
     grid-column: 1 / 7;
     padding-inline: 1rem;
@@ -87,9 +88,9 @@ export const ProfileStyles = styled.div`
 }
 .cardBack {
 }
-
 .flipperContainer {
   border-radius:35px;
+  
 }
 .flipperContainer, .cardFront, .cardBack {
   -webkit-perspective: 1000px;
