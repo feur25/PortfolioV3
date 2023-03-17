@@ -229,7 +229,7 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG3}/></div></a>
             </div>
             <div className="FourthProjet">
-                <a href="https://github.com/feur25/Forum">
+                <a href="https://github.com/feur25/Social-Media">
                 <p>Forum</p>
                 <div className="image"><img src={IMG4}/></div></a>
             </div>
