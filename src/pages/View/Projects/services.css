@@ -73,6 +73,7 @@
     .sub-project{
       width : 100vw;
       flex-direction: column;
+      margin: auto 5vw;
     }
   }
   

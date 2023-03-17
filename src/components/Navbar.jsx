@@ -276,14 +276,18 @@ function DisplayBlog() {
           </li>
           <li>
             <div className="containerV2">
-              <NavbarItem>
-                <i id="github"><img src={IMG1}></img></i>
-              </NavbarItem>
+              <a href="https://github.com/feur25">
+                <NavbarItem>
+                    <i id="github"><img src={IMG1}></img></i>
+                </NavbarItem>
+              </a>
               <br/>
               <br/>
-              <NavbarItem>
-                <i id="linkdin"><img src={IMG2}></img></i>
-              </NavbarItem>
+              <a href="https://www.linkedin.com/in/quentin-coletta-361229173/">
+                <NavbarItem>
+                    <i id="linkdin"><img src={IMG2}></img></i>
+                </NavbarItem>
+              </a>
             </div>
           </li>
         </ul>

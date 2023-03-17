@@ -32,8 +32,10 @@ const Blogs = ({ data }) => {
   {   
     if(document.body.style.backgroundColor != "rgb(53, 52, 52)"){
       document.body.style.background = "rgb(53, 52, 52)";
+      // document.body.style.animation = "colors 10s ease infinite;";
     }else{
-      document.body.style.background = "linear-gradient(45deg,#9B4DCA,#4A0E35,#222730,#222730)";
+      document.body.style.background = "";
+      
     }
   }
   console.log(myVariable);

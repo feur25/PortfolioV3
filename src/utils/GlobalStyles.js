@@ -10,7 +10,6 @@ ${normalize()}
   font-family: ${primaryFont};
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1f1f1f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,6 +34,7 @@ ${normalize()}
 //   line-height: 1.6;
 //   position: relative;
 //   font-family: sans-serif;
+
 //   overflow: hidden; }
 #contact {
   width: 100%;
