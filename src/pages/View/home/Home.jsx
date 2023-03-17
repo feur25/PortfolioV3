@@ -38,23 +38,25 @@ export const Home = () => {
     ));
   };
   return (
-    <HomeWrapper ref={ref} id="home-page">
-      <TextContainer>
-        <Name>Coletta Quentin</Name>
-        <Position>
-          <div className="text first" aria-label="Data Scientist">
-            {produceSpans("Data Scientist")}
-          </div>
-          <div className="text second" aria-label="Intelligence Artificielle">
-            {produceSpans("Intelligence Artificielle")}
-          </div>
-        </Position>
-      </TextContainer>
-      <DogContainer>
-        <Canvas camera={{ position: [0, 2, 5] }}>
-          <Dog />
-        </Canvas>
-      </DogContainer>
-    </HomeWrapper>
+
+        <HomeWrapper ref={ref} id="home-page"> 
+          <TextContainer>
+            <Name>Coletta Quentin</Name>
+            <Position>
+              <div className="text first" aria-label="Data Scientist">
+                {produceSpans("Data Scientist")}
+              </div>
+              <div className="text second" aria-label="Intelligence Artificielle">
+                {produceSpans("Intelligence Artificielle")}
+              </div>
+            </Position>
+          </TextContainer>
+          <DogContainer>
+            <Canvas camera={{ position: [0, 2, 5] }}>
+              <Dog />
+            </Canvas>
+          </DogContainer>
+        </HomeWrapper>
+
   );
 };

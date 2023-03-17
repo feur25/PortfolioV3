@@ -187,11 +187,6 @@ export const Services = () => {
           
         </div>
       </section>
-      <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
       </Page>
   );
 };
