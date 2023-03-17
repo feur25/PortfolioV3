@@ -37,7 +37,7 @@ const Blogs = ({ data }) => {
     }
   }
   console.log(myVariable);
-  if(myVariable === "none" || myVariable === "error"){
+  if(myVariable === "none"){
     return (
         <div>
           <ul>

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {  useState  } from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
 import "./portfolio.css";
@@ -195,8 +195,21 @@ export const Services = () => {
       </Page>
   );
 };
+import MyContext from "../../../variable";
+import NotFound from "../Templates/NotFound";
 export const Portfolio = () => {
-  return (
+  const [myVariable, setMyVariable ] = useState("none");
+  const handleClick = (index) => {
+    setMyVariable(index);
+    console.log(myVariable);
+  };
+  console.log("Ma variable : " +myVariable);
+  if(myVariable === "error"){
+    return(
+      <NotFound />
+    )
+  }else{
+    return (
     <Page header="Projects">
       <section id="projects">
       <div className="sub-project">
@@ -206,7 +219,7 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG1}/></div></a>
             </div>
             <div className="TwoProjet">
-                <a href="error">
+                <a onClick={(event) => handleClick("error")}>
                 <p>Unreal Engine</p>
                 <div className="image"><img src={IMG2}/></div></a>
             </div>
@@ -221,12 +234,12 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG4}/></div></a>
             </div>
             <div className="FiveProjet">
-                <a href="error">
+                <a onClick={(event) => handleClick("error")}>
                 <p>IA Web</p>
                 <div className="image"><img src={IMG5}/></div></a>
             </div>
             <div className="SixProjet">
-                <a href="error">
+                <a onClick={(event) => handleClick("error")}>
                 <p>BDD</p>
                 <div className="image"><img src={IMG6}/></div></a>
             </div>
@@ -345,4 +358,6 @@ export const Portfolio = () => {
       </section>
     </Page>
   );
+  }
+  
 };

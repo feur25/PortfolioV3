@@ -166,6 +166,7 @@ export const ProjectImage = styled.div`
 `;
 export const Page404 = styled.div`
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+margin: auto 20vw;
 
 /*Functions*/
 @mixin stars() {

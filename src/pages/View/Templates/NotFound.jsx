@@ -1,5 +1,8 @@
+import React , {  useState  } from "react";
 import {Page404} from './GobalStyles';
 import { useTranslation } from 'react-i18next';
+import MyContext from "../../../variable";
+import { Page } from "../../../components/Page";
 
 const lngs = {
   en : { nativeName: "English"},
@@ -9,7 +12,11 @@ const lngs = {
 };
 const  NotFound = () => {
   const { t } = useTranslation();
+  const [myVariable, setMyVariable] = useState("none");
+  console.log(myVariable);
     return(
+      <Page header="Projects">
+        <section id="projects">
       <a href="/">
         <Page404>
           <section>
@@ -77,6 +84,8 @@ const  NotFound = () => {
         </section>
       </Page404>
     </a>
+  </section>
+  </Page>
     );
   };
 export default NotFound;
