@@ -229,8 +229,8 @@ export const Portfolio = () => {
                 <div className="image"><img src={IMG4}/></div></a>
             </div>
             <div className="FiveProjet">
-                <a onClick={(event) => handleClick("error")}>
-                <p>IA Web</p>
+                <a href="https://github.com/feur25/IA-lesson">
+                <p>IA Lesson</p>
                 <div className="image"><img src={IMG5}/></div></a>
             </div>
             <div className="SixProjet">

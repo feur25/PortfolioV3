@@ -13,6 +13,7 @@ const lngs = {
     nativeName : "French"
   }
 };
+
 const Blogs = ({ data }) => {
   const { t } = useTranslation();
   // function GetId(index){
