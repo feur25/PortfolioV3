@@ -43,19 +43,20 @@ export const Contact = () => {
               
             </ul>
 
-            <ul class="social-media-list">
-              <li><a href="https://github.com/feur25?tab=repositories" target="_blank" class="contact-icon">
+            <ul class="social-media-list"><a href="https://github.com/feur25?tab=repositories" target="_blank" class="contact-icon">
+              <li>
                  <i><img src={IMG1}/></i>
-                </a>
-              </li>
-              <li><a href="https://www.linkedin.com/in/quentin-coletta-361229173/" target="_blank" class="contact-icon">
+                
+              </li></a>
+              <a href="https://www.linkedin.com/in/quentin-coletta-361229173/"  target="_blank" class="contact-icon">
+              <li>
                 <i><img src={IMG2}/></i>
-                </a>
-              </li>
-              <li><a href="https://gmail.com" target="_blank" class="contact-icon">
+                
+              </li></a><a href="https://gmail.com" target="_blank" class="contact-icon">
+              <li>
                 <i><img src={IMG3}/></i>
-                </a>
-              </li>     
+                
+              </li>     </a>
             </ul>
       </div>
       
