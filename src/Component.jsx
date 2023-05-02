@@ -11,37 +11,17 @@ import Blog from './_id';
 import NotFound from "./pages/View/Templates/NotFound";
 // import GetUrl from "./pages/Models/GetURLId";
 // import {CardJob} from "./pages/View/Templates/tools";
-import MyContext from './variable';
+import myVariable from './variable';
 
 function HomeSpawn() {
-      // const [url, setUrl] = useState("None");
-      // useEffect(()=>{
-      //     setUrl(window.location.href)
-      // }, [])
-      // let someSpecificWord  = 'vercel.app/';
-      // let splitstr = url.split(someSpecificWord);
-      // const getId  = splitstr[1];
-      const [myVariable, setMyVariable ] = useState("none");
-      // console.log(myVariable);
-      // function handleClick() {
-      //   setMyVariable('none');
-      //   console.log("ma variable : " + myVariable);
-      // }
-      console.log("ma variable : " + myVariable);
-        if(myVariable ===  "none"){
+      console.log("ma variable : " + myVariable[0]);
+        if(myVariable[0] ===  undefined || myVariable[0] === "none"){
           return (
               <div className="App">
                 <Navbar>
-                  {/* <GetUrl /> */}
                   <div className="myDivHome" >
                     <Home />
                   </div>
-                  {/* <Projects /> */}
-                  {/* <div id="app"></div>
-                  <App />
-                  
-                  <div id="app"></div> */}
-                  {/* <MyApp /> */}
                   <div className="myDivExperience"> 
                     <Portfolio />
                   </div>
@@ -51,13 +31,8 @@ function HomeSpawn() {
                   <div className="myDivServices"> 
                     <Services />
                   </div>
-                  {/* <div className="myDivProtfolio"> 
-                    <Portfolio />
-                  </div> */}
-                  {/* <ProfileCard /> */}
                   <div className="myDivBlog"> 
                   <MyApp />
-                    {/* <Blog /> */}
                   </div>
                   <div className="myDivContact"> 
                     <Contact />
@@ -73,9 +48,9 @@ function HomeSpawn() {
       }
       return(
         <> 
-        <Navbar> 
-          <Blog />
-        </Navbar>
+          <Navbar> 
+            <Blog />
+          </Navbar>
         </> 
     )
 }

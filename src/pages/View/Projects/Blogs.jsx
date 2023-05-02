@@ -64,11 +64,6 @@ const Blogs = ({ data }) => {
                             
             </article>
             </button>
-              {/* <a href={item.blogId} className='Power'> 
-
-                  <img key={index} class="blogImages" src={item.imageUrl} alt={item.title}/>
-                  <p>{item.title}</p>
-                </a> */}
                 </div>
               )}
               </div>
