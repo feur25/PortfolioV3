@@ -6,7 +6,6 @@ function MyComponent() {
 
   return (
     <MyContext.Provider value={{ myVariable, setMyVariable }}>
-      {/* contenu de votre composant */}
     </MyContext.Provider>
   );
 }
